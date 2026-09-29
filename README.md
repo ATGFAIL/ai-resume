@@ -36,8 +36,15 @@ tmux attach -t ai-night        # watch; detach with Ctrl+B D
 ```
 On Windows use Task Scheduler or `Start-Process` so the job isn't tied to your terminal.
 
-## As a skill
-Copy `skill/ai-resume` into `~/.claude/skills/` (also works in `~/.codex/skills/`) and put `ai-resume.mjs` in `~/.claude/ai-resume/` — the skill tells the agent how to launch long tasks through the supervisor. Tell your agent to keep a `PROGRESS.md` so a resumed session knows where to continue.
+## Install as a Claude Code plugin (recommended)
+```
+/plugin marketplace add ATGFAIL/ai-resume
+/plugin install ai-resume@atgfail-tools
+```
+The bundled skill then tells the agent how to launch long tasks through the supervisor.
+
+## Install manually as a skill
+Copy `skills/ai-resume` into `~/.claude/skills/` (also works in `~/.codex/skills/`) and put `ai-resume.mjs` in `~/.claude/ai-resume/` — the skill tells the agent how to launch long tasks through the supervisor. Tell your agent to keep a `PROGRESS.md` so a resumed session knows where to continue.
 
 ## Checking quota manually
 - Claude: `claude -p ok --output-format stream-json --verbose --no-session-persistence` → `rate_limit_event.rate_limit_info.unifiedWindows.{five_hour,seven_day}.{utilization,resetsAt}`.

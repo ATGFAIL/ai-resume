@@ -1,0 +1,10 @@
+{
+  "name": "ai-resume",
+  "description": "Auto-resume Claude Code / Codex / Antigravity after a usage-quota limit resets, so overnight runs don't stall.",
+  "version": "0.1.0",
+  "author": { "name": "ATGFAIL", "url": "https://github.com/ATGFAIL" },
+  "homepage": "https://github.com/ATGFAIL/ai-resume",
+  "repository": "https://github.com/ATGFAIL/ai-resume",
+  "license": "MIT",
+  "keywords": ["quota", "rate-limit", "resume", "overnight", "claude-code", "codex", "antigravity"]
+}

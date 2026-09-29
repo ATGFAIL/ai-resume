@@ -1,0 +1,15 @@
+{
+  "name": "atgfail-tools",
+  "owner": { "name": "ATGFAIL", "url": "https://github.com/ATGFAIL" },
+  "metadata": { "description": "Tools by ATGFAIL for AI coding CLIs" },
+  "plugins": [
+    {
+      "name": "ai-resume",
+      "source": "./",
+      "description": "Auto-resume Claude Code / Codex / Antigravity after a usage-quota limit resets, so overnight runs don't stall.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["quota", "rate-limit", "resume", "overnight"]
+    }
+  ]
+}
